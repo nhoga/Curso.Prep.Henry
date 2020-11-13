@@ -1,0 +1,1 @@
+* Funciones Callback: Es la capacidad de pasar una función como argumento a otra función, estas funciones pueden llamarse en cualquier momento y pasar argumentos dentro de la función.

@@ -71,7 +71,7 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario.email) {
+  if (usuario.email !== null && usuario.email !== undefined && usuario.email !== '' ) {
     return true
   }else{
     return false
@@ -84,12 +84,12 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (objeto[propiedad]) {
-    return true
-  }else {
-    return false
-  }
-}
+  // if (objeto[propiedad]) {
+   // return true
+ // }else {
+   // return false }
+  
+  return objeto.hasOwnProperty(propiedad) }
 
 function verificarPassword(usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
